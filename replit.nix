@@ -1,8 +1,2 @@
-{ pkgs }: {
-  deps = [
-    pkgs.python310
-    pkgs.python310Packages.pip
-    pkgs.tesseract
-    pkgs.poppler_utils
-  ];
-}
+run = "uvicorn main:app --host 0.0.0.0 --port=$PORT"
+language = "python"
