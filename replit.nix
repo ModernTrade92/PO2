@@ -1,2 +1,2 @@
-run = "uvicorn main:app --host 0.0.0.0 --port=$PORT"
+run = "uvicorn main:app --host 0.0.0.0 --port=3000"
 language = "python"
