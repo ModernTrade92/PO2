@@ -81,10 +81,7 @@ async def upload_files(files: List[UploadFile] = File(...)):
     return JSONResponse(content={"results": results})
 
 @app.get("/")
-def root():
-    return {"message": "PO uploader API is running"}
+def read_root():
+    return {"message": "Server is up and running"}
 
-@app.get("/")
-def root():
-    return {"message": "Server is running"}
 
